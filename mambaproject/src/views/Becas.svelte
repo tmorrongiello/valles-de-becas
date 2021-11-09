@@ -62,7 +62,7 @@ Lista de suplentes con filtro c/exp
 	}
 
 	const editar_becado = (becado_act) => {
-        edit_beca = true
+        // edit_beca = true
     }
 
 
