@@ -13,6 +13,8 @@ Lista de suplentes con filtro c/exp
 
 <script>
 	import { db } from '../firebase';
+    import { slp } from '../stores/Slp'
+
 
 	let beca = {
 		beca_num: '',
@@ -79,7 +81,6 @@ Lista de suplentes con filtro c/exp
 <navbar class="flex space-x-2 m-2">	
     <button class="bg-yellow-500 p-3 m-1 rounded-2xl ring-2 ring-black" on:click={agregar_becados}>Agregar becado</button>	
     <br>
-<!--	<button class="bg-green-500 p-3 m-1 rounded-2xl ring-2 ring-black" on:click={mostrar_becados}>Mostrar lista de becados</button>	-->
 </navbar>	
 
 

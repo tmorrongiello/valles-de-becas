@@ -18,12 +18,21 @@ Lista de suplentes con filtro c/exp
 	import Becas from './views/Becas.svelte';
 	import Reportes from './views/Reportes.svelte';
 	import About from './views/About.svelte';
+	import { slp } from './stores/Slp'
+ 
+
+
+const cal_slp = (slpTotal) => {
+	const daily = prompt("Ingresa tus slp del día de hoy: ");
+	slp.sumar(daily);
+	console.log(slpTotal);
+}
 
 </script>
 
 
 <main class="p-36">
-	<h1 class="underline font-black text-8xl text-center mb-8">M.A.M.B.A.</h1>
+	<h1 on:click={cal_slp(100)} class="underline font-black text-8xl text-center mb-8">M.A.M.B.A.</h1>
 
 	<Router>
 		<nav>
